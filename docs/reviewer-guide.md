@@ -12,7 +12,7 @@ If structural validation stops the bot before code review, leave a short comment
 
 ## 2. Compare the adapter with upstream
 
-Use the upstream commit pinned by the author. For each distinct way the adapter generates a task, runs an agent, or grades a submission, follow a concrete task through that path on both sides.
+Start with the upstream commit the author pinned. Pick a task and follow it on both sides, from generation through agent execution to grading. If other tasks take a different path, pick an example for each one.
 
 - **Task setup.** Start with an upstream task ID. Does it map to the right split, prompt, input files, and starting state? Compare the tools, turn or time limits, and what the agent has to submit. Can it do the same work with the same information? Check that reference answers and grading inputs stay private where upstream keeps them private.
 - **Environment.** Inspect the generated task and its startup code. Are the files, dependencies, and services available where the agent expects them? If the adapter simulates a service, follow one interaction the task depends on. For example, if upstream asks the agent to retry a failed request, does the simulated service return the same error and enforce the same wait?
@@ -24,7 +24,7 @@ An agent can help you locate upstream code, explain an implementation, summarize
 
 ## 3. Generate tasks and run the oracle
 
-Check out the adapter commit under review. Use the author's documented command to generate tasks into an empty directory, preferably on your own machine. Compare task IDs and file contents with a pinned commit of the dataset PR. Look for missing, extra, and changed files. If the author generated the uploaded dataset with an older adapter commit, check where that commit is documented and whether the changes since then explain the diff. If today's generator produces the correct tasks and the upload is out of date, ask the author to regenerate it. If generating from the reviewed commit still produces incorrect behavior, fix the adapter first.
+Check out the adapter commit under review. Use the author's documented command to generate tasks into an empty directory, preferably on your own machine. Compare task IDs and file contents with a pinned commit of the dataset PR. Look for missing, extra, and changed files. If the author generated the uploaded dataset with an older adapter commit, check where that commit is documented and whether the changes since then explain the diff. If the reviewed commit generates the right tasks, ask the author to refresh the outdated dataset. If you see the same problem in a freshly generated task, fix the adapter first.
 
 Run the reference solution on the newly generated tasks using the latest stable release of the Harbor CLI. Run every task in datasets with fewer than 50 tasks. For larger datasets, choose a subset if a full run is costly. Record the total size, the selected task IDs, and why they cover the different paths. Also try a known wrong answer on a representative task and check that it receives the score the rubric assigns it.
 
@@ -32,7 +32,7 @@ Inspect each trial's reward and errors against its expected score, including any
 
 ## 4. Agree on scope, then have the author run parity
 
-If an oracle falls short, record the affected task IDs, what you expected, and what happened. Fix what the adapter can fix and rerun those tasks. If a reference solution is already broken upstream or an external limitation remains, discuss it with a maintainer. Agree on which tasks the adapter supports, which will be included in parity, and how the README will explain any exclusions.
+If a reference answer gets a lower score than you expected, note the task ID and both scores. If the problem is in the adapter, fix it and rerun the affected tasks. If a reference solution is already broken upstream or an external limitation remains, discuss it with a maintainer. Agree on which tasks the adapter supports, which will be included in parity, and how the README will explain any exclusions.
 
 Before the author runs parity, agree in the PR on the task IDs or sampling seed, upstream and Harbor revisions, agent, model, prompts, tools, judge, repetitions, budget, and metric. Apply the same settings on both sides. If failed attempts or retries come up during the run, agree with the author on how to count them, keep the original attempts, and use the same rule on both sides. If the author also tries a CLI agent such as Codex only on Harbor, give that result its own row. A comparison with upstream needs a run of the same agent there.
 
@@ -47,14 +47,14 @@ Open the artifacts for both sides and match task IDs, attempts, and denominators
 
 Matched parity requires at least two runs per side, preferably three or more. If only one run is available, for example from an upstream paper or a pilot, label it with its score and “SEM unavailable.” Ask for the remaining runs before signing off on parity.
 
-If the author changes the verifier after parity has run, first check whether the agent saw the same task and whether the saved submissions contain everything the updated verifier needs. If both hold and only grading changed, regrade those submissions and update the results. If the prompt, tools, or agent-visible environment changed, or a required piece of state was lost, rerun the affected tasks with the agent.
+If the author changes the verifier after parity has run, first check whether the agent saw the same task and whether the saved submissions contain everything the updated verifier needs. If only grading changed and you have what you need, you can regrade the saved submissions and update the results. If the prompt, tools, or agent-visible environment changed, or a required piece of state was lost, rerun the affected tasks with the agent.
 
 ## 6. Second reviewer decides whether to merge
 
-Start with the current PR commit and the first reviewer's handoff. Check anything that changed since the recorded runs. Before approving, answer these questions yourself:
+Read the first reviewer's notes alongside the latest PR commit. If anything changed after the runs, check how it affects the results before you sign off.
 
 - **Does the adapter do what upstream asks?** Pick a representative task and compare its setup and grading with upstream. Revisit any discrepancy the first reviewer flagged and check the fix or agreed scope. Confirm that structural validation passed and each bot and human finding has been addressed.
-- **What did the oracle establish?** Open the trial records for a reference answer and a known wrong answer. Compare expected and observed scores. Check the dataset revision, the number of tasks run, and the IDs and explanations for any exceptions.
+- **Did the reference answer and the wrong answer get the scores you expected?** Open the trial records for a reference answer and a known wrong answer. Compare expected and observed scores. Check the dataset revision, the number of tasks run, and the IDs and explanations for any exceptions.
 - **Do the parity numbers support this scope?** Open the linked artifacts and compare the upstream and Harbor scores side by side for each reported group. Check the agent and judge, task counts, repetitions, and treatment of retries. Confirm that the results apply to the revision being merged.
 - **Can a new reader use this PR?** Read the task instructions, README, parity table, and linked run instructions yourself. Can you find the command to reproduce a result and tell which tasks and settings it covers? Ask for an edit if the reader has to piece that together from the review thread.
 
