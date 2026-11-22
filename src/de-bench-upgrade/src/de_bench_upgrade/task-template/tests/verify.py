@@ -183,9 +183,12 @@ def unpack(root):
 
 
 def verify(workspace, output):
-    workspace, output = Path(workspace).resolve(), Path(output)
+    workspace, output = Path(workspace), Path(output)
     output.mkdir(parents=True, exist_ok=True)
     (output / 'reward.txt').unlink(missing_ok=True)
+    if workspace.is_symlink():
+        raise ValueError(f'Unsafe submission symlink: {workspace}')
+    workspace = workspace.resolve()
     config = json.loads((HERE / 'config.json').read_text())
     if any(c['kind'] != 'scoring_primitive' for c in config['checks']):
         raise ValueError('Unsupported check: refusing to omit runtime semantics')

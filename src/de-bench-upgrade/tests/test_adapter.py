@@ -198,6 +198,15 @@ class CorpusTest(unittest.TestCase):
                 finally:
                     link.unlink(); (work / 'chained-leak').unlink()
 
+    def test_workspace_root_cannot_be_replaced_with_oracle_symlink(self):
+        task, work, git = self.security_workspace()
+        shutil.rmtree(work)
+        work.symlink_to(task / 'tests/oracle/solution', target_is_directory=True)
+        proc, result = self.run_verifier(task, work)
+        self.assertNotEqual(proc.returncode, 0)
+        self.assertIn('Unsafe submission symlink', proc.stderr)
+        self.assertFalse((result / 'reward.txt').exists())
+
     def test_reference_symlink_cannot_turn_baseline_into_pass(self):
         task, work, git = self.security_workspace()
         dag = work / 'dags/daily_report.py'

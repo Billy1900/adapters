@@ -2,388 +2,389 @@
   "harbor_version": "0.27.0",
   "environment_profile": "upstream-runtime",
   "upstream_commit": "5dcfc2b81b13dcf58cff49e192e97f1ae05f8dbc",
+  "verifier_sha256": "f0be253ec80f4b6d5cc64634a4f4f14aa40a4b1fe47218bcdc6fdcbc7631283b",
   "oracle_check_maps_matching_original_runtime": 62,
-  "raw_results": "/home/lnq/adapters/jobs/de-bench-upgrade/oracle-security-fixes",
+  "raw_results": "/home/lnq/adapters/jobs/de-bench-upgrade/oracle-security-final",
   "trials": [
     {
       "task_name": "astronomer/task-upgrade-v2-13ee0f",
-      "trial": "task-upgrade-v2-13ee0f__2kkT2Vy",
+      "trial": "task-upgrade-v2-13ee0f__NVzdgD4",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-158cba",
-      "trial": "task-upgrade-v2-158cba__9x8EjFY",
+      "trial": "task-upgrade-v2-158cba__ZF98SRX",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-1803ab",
-      "trial": "task-upgrade-v2-1803ab__v9XnyZa",
+      "trial": "task-upgrade-v2-1803ab__t5qLoaJ",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-23f2a0",
-      "trial": "task-upgrade-v2-23f2a0__YEQyxkc",
+      "trial": "task-upgrade-v2-23f2a0__zDtuxTv",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-2c5f8a",
-      "trial": "task-upgrade-v2-2c5f8a__Y572yLp",
+      "trial": "task-upgrade-v2-2c5f8a__5Vk7kL5",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-2e7d4c",
-      "trial": "task-upgrade-v2-2e7d4c__yeP8kRz",
+      "trial": "task-upgrade-v2-2e7d4c__XJGFqgN",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-3a7e9c",
-      "trial": "task-upgrade-v2-3a7e9c__Typq5MM",
+      "trial": "task-upgrade-v2-3a7e9c__8JLxEFQ",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-3bc940",
-      "trial": "task-upgrade-v2-3bc940__gbaw8Nm",
+      "trial": "task-upgrade-v2-3bc940__6tNntZb",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-3c8b7f",
-      "trial": "task-upgrade-v2-3c8b7f__gT3Uej5",
+      "trial": "task-upgrade-v2-3c8b7f__SKuqaXe",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-4a7d3e",
-      "trial": "task-upgrade-v2-4a7d3e__ZiXrrXr",
+      "trial": "task-upgrade-v2-4a7d3e__NJyELVW",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-4bd90e",
-      "trial": "task-upgrade-v2-4bd90e__TA55zUo",
+      "trial": "task-upgrade-v2-4bd90e__jiBGkub",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-5aad12",
-      "trial": "task-upgrade-v2-5aad12__CL2CG7N",
+      "trial": "task-upgrade-v2-5aad12__CWedRSS",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-5b1d9e",
-      "trial": "task-upgrade-v2-5b1d9e__kYv4zeW",
+      "trial": "task-upgrade-v2-5b1d9e__jkyk558",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-5d1a92",
-      "trial": "task-upgrade-v2-5d1a92__Mob4u8L",
+      "trial": "task-upgrade-v2-5d1a92__VXRGqYc",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-6ae13f",
-      "trial": "task-upgrade-v2-6ae13f__xgWQqfV",
+      "trial": "task-upgrade-v2-6ae13f__g5AWAE5",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-6e4c8b",
-      "trial": "task-upgrade-v2-6e4c8b__f8VMAcU",
+      "trial": "task-upgrade-v2-6e4c8b__MpLgcfg",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-6e9b1c",
-      "trial": "task-upgrade-v2-6e9b1c__kiN7kKR",
+      "trial": "task-upgrade-v2-6e9b1c__cCnG9Jw",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-74e087",
-      "trial": "task-upgrade-v2-74e087__ZfdBBTt",
+      "trial": "task-upgrade-v2-74e087__iM2BqzE",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-7a8b9c",
-      "trial": "task-upgrade-v2-7a8b9c__PwfsfJq",
+      "trial": "task-upgrade-v2-7a8b9c__xK5XYaT",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-7b7c4f",
-      "trial": "task-upgrade-v2-7b7c4f__FJXN8KY",
+      "trial": "task-upgrade-v2-7b7c4f__teL6uz2",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-7e251d",
-      "trial": "task-upgrade-v2-7e251d__gR7VREH",
+      "trial": "task-upgrade-v2-7e251d__TVxrEQx",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-7ed192",
-      "trial": "task-upgrade-v2-7ed192__CvaESrh",
+      "trial": "task-upgrade-v2-7ed192__9kAmmTq",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-86b4f2",
-      "trial": "task-upgrade-v2-86b4f2__UQSsQ9U",
+      "trial": "task-upgrade-v2-86b4f2__iwnJbNf",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-8c2d51",
-      "trial": "task-upgrade-v2-8c2d51__JdUgsGJ",
+      "trial": "task-upgrade-v2-8c2d51__bb5vSw2",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-8f2d5a",
-      "trial": "task-upgrade-v2-8f2d5a__UgHJPBQ",
+      "trial": "task-upgrade-v2-8f2d5a__KXkv3dQ",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-9a2fed",
-      "trial": "task-upgrade-v2-9a2fed__EJYTgTX",
+      "trial": "task-upgrade-v2-9a2fed__VB7ic4U",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-9c2a4d",
-      "trial": "task-upgrade-v2-9c2a4d__4gJ3YV9",
+      "trial": "task-upgrade-v2-9c2a4d__PFwQTKi",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-9d4e1a",
-      "trial": "task-upgrade-v2-9d4e1a__p7dbmbf",
+      "trial": "task-upgrade-v2-9d4e1a__MFCxDuU",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-9e8d7c",
-      "trial": "task-upgrade-v2-9e8d7c__C2egpwY",
+      "trial": "task-upgrade-v2-9e8d7c__pkkCNLb",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-a1b2c3",
-      "trial": "task-upgrade-v2-a1b2c3__WfftaUj",
+      "trial": "task-upgrade-v2-a1b2c3__AgUSXQn",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-a1d3f9",
-      "trial": "task-upgrade-v2-a1d3f9__jGCEmbN",
+      "trial": "task-upgrade-v2-a1d3f9__ULDmMFY",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-a3ea1b",
-      "trial": "task-upgrade-v2-a3ea1b__Tzzgsnu",
+      "trial": "task-upgrade-v2-a3ea1b__9yNtBGX",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-ad4791",
-      "trial": "task-upgrade-v2-ad4791__YpNdbBr",
+      "trial": "task-upgrade-v2-ad4791__uNidSNe",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-b16c01",
-      "trial": "task-upgrade-v2-b16c01__wCJr5nr",
+      "trial": "task-upgrade-v2-b16c01__aFWzt2A",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-b3cbb4",
-      "trial": "task-upgrade-v2-b3cbb4__BdUj8xd",
+      "trial": "task-upgrade-v2-b3cbb4__eYyprZ8",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-b6f2e1",
-      "trial": "task-upgrade-v2-b6f2e1__PeFfCPZ",
+      "trial": "task-upgrade-v2-b6f2e1__4fxwZb6",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-bb36fa",
-      "trial": "task-upgrade-v2-bb36fa__k8VTLHK",
+      "trial": "task-upgrade-v2-bb36fa__ibcZFiR",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-be18e0",
-      "trial": "task-upgrade-v2-be18e0__Ki6Ck7F",
+      "trial": "task-upgrade-v2-be18e0__8tz2Xkp",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-c1d2e3",
-      "trial": "task-upgrade-v2-c1d2e3__cJ4kcNL",
+      "trial": "task-upgrade-v2-c1d2e3__aK8nMYF",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-c31a39",
-      "trial": "task-upgrade-v2-c31a39__77KzHAb",
+      "trial": "task-upgrade-v2-c31a39__pHLkVtg",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-c8e2f5",
-      "trial": "task-upgrade-v2-c8e2f5__X3nvYQk",
+      "trial": "task-upgrade-v2-c8e2f5__YnMiDQE",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-c8f2e3",
-      "trial": "task-upgrade-v2-c8f2e3__mPBQq7o",
+      "trial": "task-upgrade-v2-c8f2e3__hssPQYb",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-c91e72",
-      "trial": "task-upgrade-v2-c91e72__tx6ASve",
+      "trial": "task-upgrade-v2-c91e72__TkgaZcG",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-cosme01",
-      "trial": "task-upgrade-v2-cosme01__aTTRfEQ",
+      "trial": "task-upgrade-v2-cosme01__MdU7Xvd",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-cosmm01",
-      "trial": "task-upgrade-v2-cosmm01__7nzHJUA",
+      "trial": "task-upgrade-v2-cosmm01__j58m7ho",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-d132d2",
-      "trial": "task-upgrade-v2-d132d2__4sHMBht",
+      "trial": "task-upgrade-v2-d132d2__7bKwktG",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-d3f608",
-      "trial": "task-upgrade-v2-d3f608__DfsMc42",
+      "trial": "task-upgrade-v2-d3f608__j5UDEQi",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-d4e5f6",
-      "trial": "task-upgrade-v2-d4e5f6__VfcrL7X",
+      "trial": "task-upgrade-v2-d4e5f6__kJJoyrZ",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-d4f3a2",
-      "trial": "task-upgrade-v2-d4f3a2__7c6QsVx",
+      "trial": "task-upgrade-v2-d4f3a2__SYpJn46",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-d8e7f6",
-      "trial": "task-upgrade-v2-d8e7f6__sFYFMUK",
+      "trial": "task-upgrade-v2-d8e7f6__sL9zkeC",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-d9e4f7",
-      "trial": "task-upgrade-v2-d9e4f7__AX6CiUq",
+      "trial": "task-upgrade-v2-d9e4f7__YTJKZQu",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-dgfe01",
-      "trial": "task-upgrade-v2-dgfe01__sPbE3Js",
+      "trial": "task-upgrade-v2-dgfe01__XoXyMgZ",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-dgfh01",
-      "trial": "task-upgrade-v2-dgfh01__sWMCpH7",
+      "trial": "task-upgrade-v2-dgfh01__JFBwctM",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-dgfm01",
-      "trial": "task-upgrade-v2-dgfm01__sthoq2p",
+      "trial": "task-upgrade-v2-dgfm01__pTUcQhD",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-e1f374",
-      "trial": "task-upgrade-v2-e1f374__8q6hN2P",
+      "trial": "task-upgrade-v2-e1f374__S4adSJS",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-e691fb",
-      "trial": "task-upgrade-v2-e691fb__5S54AgY",
+      "trial": "task-upgrade-v2-e691fb__Ftdoufb",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-e9c7b1",
-      "trial": "task-upgrade-v2-e9c7b1__x5JGnNg",
+      "trial": "task-upgrade-v2-e9c7b1__vcjjRq3",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-ef8d00",
-      "trial": "task-upgrade-v2-ef8d00__Rxmfg7A",
+      "trial": "task-upgrade-v2-ef8d00__gXvnyEK",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-f1a2b3",
-      "trial": "task-upgrade-v2-f1a2b3__DNhtmzd",
+      "trial": "task-upgrade-v2-f1a2b3__qVPvjBg",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-fe8a73",
-      "trial": "task-upgrade-v2-fe8a73__TsCtnQ9",
+      "trial": "task-upgrade-v2-fe8a73__iTxdGHC",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-s5l4a3",
-      "trial": "task-upgrade-v2-s5l4a3__EkBUH3w",
+      "trial": "task-upgrade-v2-s5l4a3__EPbgWVP",
       "reward": 1.0,
       "exception": null
     },
     {
       "task_name": "astronomer/task-upgrade-v2-sql01",
-      "trial": "task-upgrade-v2-sql01__g8h2ZvY",
+      "trial": "task-upgrade-v2-sql01__SgaeMej",
       "reward": 1.0,
       "exception": null
     }
   ],
   "job_result": {
     "schema_version": 1,
-    "id": "ea671c87-14ad-4f14-a82f-b699191950c7",
-    "started_at": "2026-11-22T12:19:28.151563",
-    "updated_at": "2026-11-22T12:22:53.916705",
-    "finished_at": "2026-11-22T12:22:53.916705",
+    "id": "69b23a49-d5e0-48e5-b083-e5ee9852e94f",
+    "started_at": "2026-11-22T12:26:50.393152",
+    "updated_at": "2026-11-22T12:28:40.493714",
+    "finished_at": "2026-11-22T12:28:40.493714",
     "n_total_trials": 62,
     "stats": {
       "n_completed_trials": 62,
@@ -405,68 +406,68 @@
           "reward_stats": {
             "reward": {
               "1.0": [
-                "task-upgrade-v2-13ee0f__2kkT2Vy",
-                "task-upgrade-v2-158cba__9x8EjFY",
-                "task-upgrade-v2-1803ab__v9XnyZa",
-                "task-upgrade-v2-23f2a0__YEQyxkc",
-                "task-upgrade-v2-2c5f8a__Y572yLp",
-                "task-upgrade-v2-2e7d4c__yeP8kRz",
-                "task-upgrade-v2-3a7e9c__Typq5MM",
-                "task-upgrade-v2-3bc940__gbaw8Nm",
-                "task-upgrade-v2-3c8b7f__gT3Uej5",
-                "task-upgrade-v2-4a7d3e__ZiXrrXr",
-                "task-upgrade-v2-4bd90e__TA55zUo",
-                "task-upgrade-v2-5aad12__CL2CG7N",
-                "task-upgrade-v2-5b1d9e__kYv4zeW",
-                "task-upgrade-v2-5d1a92__Mob4u8L",
-                "task-upgrade-v2-6ae13f__xgWQqfV",
-                "task-upgrade-v2-6e4c8b__f8VMAcU",
-                "task-upgrade-v2-6e9b1c__kiN7kKR",
-                "task-upgrade-v2-74e087__ZfdBBTt",
-                "task-upgrade-v2-7a8b9c__PwfsfJq",
-                "task-upgrade-v2-7b7c4f__FJXN8KY",
-                "task-upgrade-v2-7e251d__gR7VREH",
-                "task-upgrade-v2-7ed192__CvaESrh",
-                "task-upgrade-v2-86b4f2__UQSsQ9U",
-                "task-upgrade-v2-8c2d51__JdUgsGJ",
-                "task-upgrade-v2-8f2d5a__UgHJPBQ",
-                "task-upgrade-v2-9a2fed__EJYTgTX",
-                "task-upgrade-v2-9c2a4d__4gJ3YV9",
-                "task-upgrade-v2-9d4e1a__p7dbmbf",
-                "task-upgrade-v2-9e8d7c__C2egpwY",
-                "task-upgrade-v2-a1b2c3__WfftaUj",
-                "task-upgrade-v2-a1d3f9__jGCEmbN",
-                "task-upgrade-v2-a3ea1b__Tzzgsnu",
-                "task-upgrade-v2-ad4791__YpNdbBr",
-                "task-upgrade-v2-b16c01__wCJr5nr",
-                "task-upgrade-v2-b3cbb4__BdUj8xd",
-                "task-upgrade-v2-b6f2e1__PeFfCPZ",
-                "task-upgrade-v2-bb36fa__k8VTLHK",
-                "task-upgrade-v2-be18e0__Ki6Ck7F",
-                "task-upgrade-v2-c1d2e3__cJ4kcNL",
-                "task-upgrade-v2-c31a39__77KzHAb",
-                "task-upgrade-v2-c8e2f5__X3nvYQk",
-                "task-upgrade-v2-c8f2e3__mPBQq7o",
-                "task-upgrade-v2-c91e72__tx6ASve",
-                "task-upgrade-v2-cosme01__aTTRfEQ",
-                "task-upgrade-v2-cosmm01__7nzHJUA",
-                "task-upgrade-v2-d132d2__4sHMBht",
-                "task-upgrade-v2-d3f608__DfsMc42",
-                "task-upgrade-v2-d4e5f6__VfcrL7X",
-                "task-upgrade-v2-d4f3a2__7c6QsVx",
-                "task-upgrade-v2-d8e7f6__sFYFMUK",
-                "task-upgrade-v2-d9e4f7__AX6CiUq",
-                "task-upgrade-v2-dgfe01__sPbE3Js",
-                "task-upgrade-v2-dgfh01__sWMCpH7",
-                "task-upgrade-v2-dgfm01__sthoq2p",
-                "task-upgrade-v2-e1f374__8q6hN2P",
-                "task-upgrade-v2-e691fb__5S54AgY",
-                "task-upgrade-v2-e9c7b1__x5JGnNg",
-                "task-upgrade-v2-ef8d00__Rxmfg7A",
-                "task-upgrade-v2-f1a2b3__DNhtmzd",
-                "task-upgrade-v2-fe8a73__TsCtnQ9",
-                "task-upgrade-v2-s5l4a3__EkBUH3w",
-                "task-upgrade-v2-sql01__g8h2ZvY"
+                "task-upgrade-v2-13ee0f__NVzdgD4",
+                "task-upgrade-v2-158cba__ZF98SRX",
+                "task-upgrade-v2-1803ab__t5qLoaJ",
+                "task-upgrade-v2-23f2a0__zDtuxTv",
+                "task-upgrade-v2-2c5f8a__5Vk7kL5",
+                "task-upgrade-v2-2e7d4c__XJGFqgN",
+                "task-upgrade-v2-3a7e9c__8JLxEFQ",
+                "task-upgrade-v2-3bc940__6tNntZb",
+                "task-upgrade-v2-3c8b7f__SKuqaXe",
+                "task-upgrade-v2-4a7d3e__NJyELVW",
+                "task-upgrade-v2-4bd90e__jiBGkub",
+                "task-upgrade-v2-5aad12__CWedRSS",
+                "task-upgrade-v2-5b1d9e__jkyk558",
+                "task-upgrade-v2-5d1a92__VXRGqYc",
+                "task-upgrade-v2-6ae13f__g5AWAE5",
+                "task-upgrade-v2-6e4c8b__MpLgcfg",
+                "task-upgrade-v2-6e9b1c__cCnG9Jw",
+                "task-upgrade-v2-74e087__iM2BqzE",
+                "task-upgrade-v2-7a8b9c__xK5XYaT",
+                "task-upgrade-v2-7b7c4f__teL6uz2",
+                "task-upgrade-v2-7e251d__TVxrEQx",
+                "task-upgrade-v2-7ed192__9kAmmTq",
+                "task-upgrade-v2-86b4f2__iwnJbNf",
+                "task-upgrade-v2-8c2d51__bb5vSw2",
+                "task-upgrade-v2-8f2d5a__KXkv3dQ",
+                "task-upgrade-v2-9a2fed__VB7ic4U",
+                "task-upgrade-v2-9c2a4d__PFwQTKi",
+                "task-upgrade-v2-9d4e1a__MFCxDuU",
+                "task-upgrade-v2-9e8d7c__pkkCNLb",
+                "task-upgrade-v2-a1b2c3__AgUSXQn",
+                "task-upgrade-v2-a1d3f9__ULDmMFY",
+                "task-upgrade-v2-a3ea1b__9yNtBGX",
+                "task-upgrade-v2-ad4791__uNidSNe",
+                "task-upgrade-v2-b16c01__aFWzt2A",
+                "task-upgrade-v2-b3cbb4__eYyprZ8",
+                "task-upgrade-v2-b6f2e1__4fxwZb6",
+                "task-upgrade-v2-bb36fa__ibcZFiR",
+                "task-upgrade-v2-be18e0__8tz2Xkp",
+                "task-upgrade-v2-c1d2e3__aK8nMYF",
+                "task-upgrade-v2-c31a39__pHLkVtg",
+                "task-upgrade-v2-c8e2f5__YnMiDQE",
+                "task-upgrade-v2-c8f2e3__hssPQYb",
+                "task-upgrade-v2-c91e72__TkgaZcG",
+                "task-upgrade-v2-cosme01__MdU7Xvd",
+                "task-upgrade-v2-cosmm01__j58m7ho",
+                "task-upgrade-v2-d132d2__7bKwktG",
+                "task-upgrade-v2-d3f608__j5UDEQi",
+                "task-upgrade-v2-d4e5f6__kJJoyrZ",
+                "task-upgrade-v2-d4f3a2__SYpJn46",
+                "task-upgrade-v2-d8e7f6__sL9zkeC",
+                "task-upgrade-v2-d9e4f7__YTJKZQu",
+                "task-upgrade-v2-dgfe01__XoXyMgZ",
+                "task-upgrade-v2-dgfh01__JFBwctM",
+                "task-upgrade-v2-dgfm01__pTUcQhD",
+                "task-upgrade-v2-e1f374__S4adSJS",
+                "task-upgrade-v2-e691fb__Ftdoufb",
+                "task-upgrade-v2-e9c7b1__vcjjRq3",
+                "task-upgrade-v2-ef8d00__gXvnyEK",
+                "task-upgrade-v2-f1a2b3__qVPvjBg",
+                "task-upgrade-v2-fe8a73__iTxdGHC",
+                "task-upgrade-v2-s5l4a3__EPbgWVP",
+                "task-upgrade-v2-sql01__SgaeMej"
               ]
             }
           },

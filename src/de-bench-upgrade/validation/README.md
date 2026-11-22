@@ -158,7 +158,8 @@ and disabled hooks/fsmonitor/automatic maintenance. External merge/filter driver
 cannot be configured by the submission. The original agent repository is not
 modified.
 
-File and directory symlinks, including chains, are checked before capture, after
+The workspace root itself cannot be a symlink. File and directory symlinks,
+including chains, are checked before capture, after
 each stash application and after final patch replay. Escaping/cyclic links fail
 verification without a reward file; internal relative links remain supported.
 This is process-level input hardening, not a claim of separate-container verifier
@@ -166,13 +167,13 @@ isolation; that migration remains a distinct follow-up.
 
 Security regression results:
 
-- Host regression suite: 16 passed (`security-regression-tests.txt`).
+- Host regression suite: 17 passed (`security-regression-tests.txt`).
 - The same suite in the locked full-runtime Docker image, with network disabled:
-  16 passed (`security-docker-tests.txt`).
+  17 passed (`security-docker-tests.txt`).
 - Full 62-task, four-state scoring comparison: 248/248 per-check maps and final
   results match upstream (`security-scoring-full.json`).
 - Tests cover local and inherited Git command injection, packed stash objects and
-  refs, symlinked object storage, file/directory/chained/stashed escaping links,
+  refs, symlinked object storage, root/file/directory/chained/stashed escaping links,
   stale reward removal, and successful internal relative links.
 - Full-runtime Harbor oracle after the fixes: **62/62 reward 1, zero exceptions**,
   with all oracle per-check outcomes matching the original runtime scorer

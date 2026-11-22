@@ -12,10 +12,11 @@ test_symlinked_git_objects_are_rejected (test_adapter.CorpusTest.test_symlinked_
 test_unknown_task_and_existing_destination_rejected (test_adapter.CorpusTest.test_unknown_task_and_existing_destination_rejected) ... ok
 test_verifier_ignores_inherited_git_configuration (test_adapter.CorpusTest.test_verifier_ignores_inherited_git_configuration) ... ok
 test_verifier_protected_paths_and_excluded_outputs (test_adapter.CorpusTest.test_verifier_protected_paths_and_excluded_outputs) ... ok
+test_workspace_root_cannot_be_replaced_with_oracle_symlink (test_adapter.CorpusTest.test_workspace_root_cannot_be_replaced_with_oracle_symlink) ... ok
 test_deleted_globs_and_overlay (test_adapter.OverlayTest.test_deleted_globs_and_overlay) ... ok
 test_deletion_cannot_escape (test_adapter.OverlayTest.test_deletion_cannot_escape) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 10.373s
+Ran 17 tests in 10.892s
 
 OK
