@@ -141,3 +141,39 @@ as part of its normal dependency graph; a blanket prerelease ban is unsuitable.
 The final recipe installs the frozen package list, rather than re-resolving
 floating auxiliary packages on every build. This adaptation must be applied
 symmetrically to upstream before agent parity is meaningful.
+
+## Copilot grading-integrity fixes (PR #135)
+
+The review identified command execution through submitted Git configuration and
+reference-answer exposure through escaping symlinks. Both issues were reproduced
+before the fix: a malicious fsmonitor created an execution marker, and escaping
+links were accepted, including links restored from a stash.
+
+The verifier now initializes a fresh recovery repository in a separate scratch
+directory and imports only regular SHA-1 object/pack files and parsed commit IDs.
+It does not copy submitted config, hooks, index, info attributes, alternates or
+replacement refs. Every Git invocation uses a fixed executable/search path, an
+allowlisted environment, disabled system/global configuration, empty templates,
+and disabled hooks/fsmonitor/automatic maintenance. External merge/filter drivers
+cannot be configured by the submission. The original agent repository is not
+modified.
+
+File and directory symlinks, including chains, are checked before capture, after
+each stash application and after final patch replay. Escaping/cyclic links fail
+verification without a reward file; internal relative links remain supported.
+This is process-level input hardening, not a claim of separate-container verifier
+isolation; that migration remains a distinct follow-up.
+
+Security regression results:
+
+- Host regression suite: 16 passed (`security-regression-tests.txt`).
+- The same suite in the locked full-runtime Docker image, with network disabled:
+  16 passed (`security-docker-tests.txt`).
+- Full 62-task, four-state scoring comparison: 248/248 per-check maps and final
+  results match upstream (`security-scoring-full.json`).
+- Tests cover local and inherited Git command injection, packed stash objects and
+  refs, symlinked object storage, file/directory/chained/stashed escaping links,
+  stale reward removal, and successful internal relative links.
+- Full-runtime Harbor oracle after the fixes: **62/62 reward 1, zero exceptions**,
+  with all oracle per-check outcomes matching the original runtime scorer
+  (`harbor-oracle-security-fixes.json`).

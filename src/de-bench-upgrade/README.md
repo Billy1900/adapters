@@ -30,7 +30,10 @@ external verifier, and no solution deletion manifests. Some checks named
 - Captures a binary patch against the original private workspace, then rebuilds
   a clean scoring tree. Agent commits do not hide modifications. Upstream runtime
   output exclusions are extracted from its source, and stashed changes recovered
-  in a temporary copy before capture.
+  in a temporary copy before capture. Recovery imports only validated Git objects
+  and commit IDs into a fresh repository; submitted Git configuration, hooks,
+  alternates and inherited Git settings are never used. Escaping file/directory
+  symlinks are rejected before capture, after stash recovery and before scoring.
 - Keeps scorer and reference answers outside the Docker build context. They are
   supplied by Harbor for verification, after the agent completes. Reference
   overlays support `.deleted` globs without allowing paths outside the workspace.
